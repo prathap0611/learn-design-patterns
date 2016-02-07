@@ -2,13 +2,21 @@
     <head>
         <title>Cat Click</title>
         <script src="../../../node_modules/angular/angular.js"></script>
+        <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../../controller/dashboard.controller.js"></script>
     </head>
     <body ng-app="mainApp" ng-controller="dashboard">
-        <div ng-repeat="cat in catDetails">
-            <p>Click {{cat.name}}</p>
-            <img ng-src = "{{cat.image}}" ng-click="incrementCount($index)">
-            {{cat.clickCount}}
+        <div class="container">
+            <div class="col-md-4">Cat List
+                <div ng-repeat="cat in catDetails">
+                    <div ng-click="showCat($index)">{{cat.name}}</div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <img ng-src = "{{catDetails[selectedCatIndex].image}}" ng-click="incrementCount()">
+                {{catDetails[selectedCatIndex].clickCount}}
+            </div>
         </div>
     </body>
 </html>
