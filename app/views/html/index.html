@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Cat Click</title>
+        <script src="../../../node_modules/angular/angular.js"></script>
+        <script src="../../controller/dashboard.controller.js"></script>
+    </head>
+    <body ng-app="mainApp" ng-controller="dashboard">
+        <p>Click Me</p>
+        <img src="../../assets/cat.jpg" ng-click="incrementCount()">
+        {{clickCount}}
+    </body>
+</html>

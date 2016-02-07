@@ -1,0 +1,23 @@
+{
+  "name": "cat-click",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/app/views/index.html",
+  "dependencies": {
+    "angular": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prathap0611/learn-design-patterns.git"
+  },
+  "author": "Hari Prathap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prathap0611/learn-design-patterns/issues"
+  },
+  "homepage": "https://github.com/prathap0611/learn-design-patterns#readme"
+}
